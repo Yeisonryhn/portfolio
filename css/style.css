@@ -1,0 +1,49 @@
+body{
+	margin: 0;
+	background-image: url('../img/php coding.jpg');
+	background-size: 1000px;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-position-y: 80px;	 
+}
+.header{
+	height: 80px;
+	margin: 0;
+	background-color: black;
+	display: flex;
+}
+
+.hero{
+	height: 500px;
+}
+
+.aboutme{
+	height: 500px;
+	background-color: #afafaf;
+}
+
+.services{
+	height: 500px;
+	background-color: #c5c5c5;
+}
+
+.projects{
+	height: 500px;
+	background-color: #818181;
+}
+
+.contact{
+	height: 200px;
+	background-color: #363636;
+}
+
+footer{
+	height: 50px;
+	background-color: black;
+}
+.wrapper{
+	width: 1002px;
+	height: inherit;
+	border: 1px solid red;
+	margin: auto;
+}
