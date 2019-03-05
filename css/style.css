@@ -1,49 +1,116 @@
 body{
 	margin: 0;
 	background-image: url('../img/php coding.jpg');
-	background-size: 1000px;
+	background-size: 1000px 580px;
 	background-repeat: no-repeat;
 	background-position: center;
-	background-position-y: 80px;	 
+	background-position-y: 0;
+	background-attachment: fixed;
+
 }
+ul{
+	display: inherit;
+	height: inherit;
+	margin: 0;
+	display: inherit;
+	align-items: center;
+}
+ul li{
+	list-style: none;
+	height: inherit;
+	display: inherit;
+	align-items: center;
+	
+}
+/*Seccion del header----------------------------------------------------------------------------------------*/
 .header{
-	height: 80px;
+	height: 79px;
 	margin: 0;
 	background-color: black;
+	border-bottom: 1px solid white;
 	display: flex;
-}
+	justify-content: space-between;
 
+}
+.logo{
+	width: 300px;
+	object-fit: cover;
+	margin: 15px;
+	display: flex;
+	align-items: center;
+
+}
+.logo img{
+	width: 60px;
+	display: block;
+	margin-right: 20px;
+}
+.logo p{
+	color: white;
+	display: block;
+	font-size: 20px;
+}
+.menu{
+	display: inherit;
+	height: inherit;
+	display: inherit;
+	align-items: center;
+}
+.link{
+	color: white;
+	text-decoration: none;
+	list-style: none;
+	height: inherit;
+	display: inherit;
+	align-items: center;
+	margin-right: 30px;
+}
+.link#special{
+	border: 2px solid #026fff;
+	color: #026fff;
+	border-radius: 10px;
+	width: 100px;
+	height: 40px;
+	align-items: center;
+	justify-content: center;
+
+}
+/*Seccion del Hero------------------------------------------------------------------------------------------*/
 .hero{
 	height: 500px;
 }
 
+/*Seccion acerca de mi--------------------------------------------------------------------------------------*/
 .aboutme{
 	height: 500px;
 	background-color: #afafaf;
 }
-
+/*Seccion Servicios-----------------------------------------------------------------------------------------*/
 .services{
 	height: 500px;
 	background-color: #c5c5c5;
 }
-
+/*Seccion Proyectos-----------------------------------------------------------------------------------------*/
 .projects{
 	height: 500px;
 	background-color: #818181;
 }
-
+/*Seccion de Contacto---------------------------------------------------------------------------------------*/
 .contact{
 	height: 200px;
 	background-color: #363636;
 }
-
+/*Seccion del footer----------------------------------------------------------------------------------------*/
 footer{
 	height: 50px;
 	background-color: black;
 }
+/*Seccion del contenedor de la pagina------------------------------------------------------------------------*/
 .wrapper{
 	width: 1002px;
 	height: inherit;
-	border: 1px solid red;
+	/*border: 1px solid red;*/
 	margin: auto;
+	display: inherit;
+	justify-content: inherit;
 }
