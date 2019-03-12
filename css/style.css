@@ -4,7 +4,7 @@ font-family: 'ZCOOL QingKe HuangYou', cursive;*/
 body{
 	margin: 0;
 	background-image: url('../img/php coding.jpg');
-	background-size: 1000px 580px;
+	background-size: 100% 100%;
 	background-repeat: no-repeat;
 	background-position: center;
 	background-position-y: 0;
@@ -180,13 +180,81 @@ h1,h2,h3,h4,h5,h6{
 
 /*Seccion Proyectos-----------------------------------------------------------------------------------------*/
 .projects{
-	height: 500px;
+	margin: auto;
 	background-color: #818181;
+	padding: 20px;
+}
+
+.projects h2{
+
+    text-align: center;
+    font-size: 30px;
+    margin: 10px;
+
+}
+.project{
+	background-color: #c5c5c5;
+	border-radius: 10px;
+	box-shadow: 0 0 20px black;
+	display: flex;
+	padding-left: 20px;
+	padding-bottom:  20px;
+	padding-top: 20px;
+	margin: 40px 150px;
+}
+
+.project-title{
+	margin: 0;
+	text-align: center;
+	font-size: 25px;
+	font-weight: 300;
+	margin-bottom: 20px;
+}
+
+.project-detail{
+	font-size: 20px;
+	line-height: 30px;
+	text-align: center;
 }
 /*Seccion de Contacto---------------------------------------------------------------------------------------*/
 .contact{
-	height: 200px;
 	background-color: #363636;
+}
+.contact h2{
+	margin: 0;
+	color: #026fff;
+	text-align: center;
+	font-size: 30px;
+	padding: 20px;
+}
+.social{
+	display: inline-block;
+	display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    padding-top:0; 
+}
+.social-link{
+	width: 60px;
+	height: 60px;
+	background-size: 60px 60px;
+	margin: 0 10px;
+
+}
+
+.social-link.twitter{
+	background-image: url('../img/twitter.svg');
+
+}
+.social-link.facebook{
+	background-image: url('../img/facebook.svg');
+}
+.social-link.github{
+	background-image: url('../img/github.svg');
+}
+.social-link.instagram{
+	background-image: url('../img/instagram.svg');
 }
 /*Seccion del footer----------------------------------------------------------------------------------------*/
 footer{
