@@ -35,12 +35,12 @@ font-family: 'ZCOOL QingKe HuangYou', cursive;*/
 body{
 	margin: 0;
 	background-color: #c5c5c5;
-	/*background-image: url('../img/php coding.jpg');
-	background-size: 100vw auto;
+	background-image: url('../img/php coding.jpg');
+	background-size: 100% 100% ;
 	background-repeat: no-repeat;
 	background-position: center;
 	background-position-y: 0;
-	background-attachment: fixed;*/
+	background-attachment: fixed;
 
 }
 p{
@@ -66,6 +66,7 @@ h1,h2,h3,h4,h5,h6{
 	height: 40px;
 	line-height: 40px;
 	border-radius: 50%;
+	display: none;
 	background-color: rgba(255, 255, 255, .8);	/*display: none;*/
 	/*background-color: #fafafa;*/
 	color: black;
@@ -89,7 +90,7 @@ h1,h2,h3,h4,h5,h6{
 .logo{
 	width: 212px;
 	object-fit: cover;
-	margin: 15px;
+	margin: auto 20px;
 	display: flex;
 	align-items: center;
 
@@ -359,10 +360,14 @@ footer p{
 
 /*Inicio del Responsive Design--------------------------------------------------------------------------------*/
 @media screen and (max-width: 1023px){
-
-
+	.hero{
+		height: 50vh;
+	}
 }
 @media screen and (max-width: 767px){
+	.burger-button{
+		display: block;
+	}
 	.header{
 		display: block;
 		height: auto;
@@ -509,6 +514,18 @@ footer p{
 	}
 }
 @media screen and (max-width: 480px){
+	body{
+		/*background-position: 0 40px ;*/
+		background-size: 150vw auto;
+	}
+	.hero{
+		font-size: 30px;
+		height: 40vh;
+	}
+	.hero h1{
+		font-size: .9em;
+		line-height: 1.5em;		
+	}
 	.aboutme-detail{
 		margin: 0 auto;
 		width: auto;
@@ -577,6 +594,18 @@ footer p{
 	}
 }
 @media screen and (max-width: 320px){
+	body{
+		/*background-position: 0 20px;*/
+		background-size: 150vw auto;
+	}
+	.hero{
+		font-size: 22px;
+		height: 35vh;
+	}
+	.hero h1{
+		font-size: .9em;
+		line-height: 1.5em;		
+	}
 	.aboutme-detail{
 		margin: 0 auto;
 		width: auto;
