@@ -1,6 +1,37 @@
 /*font-family: 'Roboto', sans-serif;
 font-family: 'Lato', sans-serif;
 font-family: 'ZCOOL QingKe HuangYou', cursive;*/
+@font-face {
+  font-family: 'icomoon';
+  src:  url('../fonts/icomoon.eot?3ot2jt');
+  src:  url('../fonts/icomoon.eot?3ot2jt#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?3ot2jt') format('truetype'),
+    url('../fonts/icomoon.woff?3ot2jt') format('woff'),
+    url('../fonts/icomoon.svg?3ot2jt#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-menu:before {
+  content: "\e9bd";
+}
+
+
 body{
 	margin: 0;
 	background-color: #c5c5c5;
@@ -29,6 +60,21 @@ ul li{
 }
 h1,h2,h3,h4,h5,h6{
 	font-family: 'Lato', sans-serif;
+}
+.burger-button{
+	width: 40px;
+	height: 40px;
+	line-height: 40px;
+	border-radius: 50%;
+	background-color: rgba(255, 255, 255, .8);	/*display: none;*/
+	/*background-color: #fafafa;*/
+	color: black;
+	text-align: center;
+	position: fixed;
+	top: 10px;
+	left: 10px;
+	z-index: 5;
+	/*line-height: 40px;*/
 }
 /*Seccion del header----------------------------------------------------------------------------------------*/
 .header{
@@ -327,11 +373,49 @@ footer p{
 		text-align: center;
 		margin: auto;
 	}
-	.menu{
+
+	.arriba{
+		position: fixed;
+		top:-50vh;
+		bottom: 50vh;
+		height: 50vh;
+		background-color: rgba(0, 0, 0, 1);
+		width: 100vw;
+		transition: 1s;	
+	}
+	.arriba.active{
+		top: 0;
+	}
+	.abajo{
+		position: fixed;
+		top:150vh;
+		bottom: 200vh;
+		height: 50vh;
+		background-color: rgba(0, 0, 0, 1);
+		width: 100vw;
+		transition: 1s;
+	}
+	.abajo.active{
+		top: 50vh;
+	}
+	.menu{	
+		position: fixed;
+		top: 0;
+		bottom: 0;
+		/*background-color: rgba(0, 0, 0, .5);	*/
+		width: 100vw;
+		left: -100vw;
+		align-items: center;
 		display: flex;
 		justify-content: center;
-		padding: 1em;
+		font-size: 20px;
+		text-decoration: underline;
+		transition: .5s;
 	}
+	.menu.is-active{
+		left: 0;
+	}
+
 	.menu ul{
 		display: block;
 		padding: 0;
@@ -352,7 +436,7 @@ footer p{
 		
 	}
 	.link#special{
-		margin: 0;
+		padding: 10px;
 	}
 	.services-h2{
 		padding: 10px 20px;
