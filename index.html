@@ -11,14 +11,14 @@
 </head>
 
 <body>
-	<i class="icon-menu burger-button"></i>
+	<i class="icon-menu burger-button" id="burger-button"></i>
 	<header id="header" class="header"><!--------------------------------Header------------------------------->
 		<div class="wrapper">
 				<figure class="logo">
 					<img src="img/logo.svg" alt="logo yeison fuentes" width="90%">
 					<strong><p>Yeison Fuentes</p></strong>
 				</figure>
-				<div class="arriba">	
+				<div class="arriba" id='up'>	
 				</div>
 				<nav class="menu">
 					<ul>
@@ -28,7 +28,7 @@
 						<li><a id="special" class="link" href="#contactame">Contáctame</a></li>
 					</ul>
 				</nav>
-				<div class="abajo">
+				<div class="abajo" id="down">
 					
 				</div>
 		</div>	
@@ -120,5 +120,43 @@
 			<p>Diseñado y Desarrollado por Yeison Fuentes 2019</p>	
 		</div>		
 	</footer> 
+	<script>
+
+		const burgerButton = document.querySelector('#burger-button');
+		const up = document.querySelector('#up');
+		const down = document.querySelector('#down');
+		const menu = document.querySelector('.menu');
+		const ipadMediaQuery = window.matchMedia('screen and ( max-width: 767px )');
+
+		console.log(burgerButton);
+		console.log(up);
+		console.log(down);
+		console.log(menu);
+		console.log(ipadMediaQuery);
+		
+		ipadMediaQuery.addListener(validation);
+
+		function validation(event){
+			if (event.matches) {
+				burgerButton.addEventListener('click',hideshow);
+			}else{
+				burgerButton.removeEventListener('click',hideshow);
+			}
+
+		}
+
+		function hideshow(){
+			if(menu.classList.contains('is-active')){
+				menu.classList.remove('is-active');
+				up.classList.remove('active');
+				down.classList.remove('active');
+			}else{
+				menu.classList.add('is-active');
+				up.classList.add('active');
+				down.classList.add('active');
+			}
+		}
+		validation(ipadMediaQuery);
+	</script>
 </body>
 </html>

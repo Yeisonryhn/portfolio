@@ -73,7 +73,7 @@ h1,h2,h3,h4,h5,h6{
 	position: fixed;
 	top: 10px;
 	left: 10px;
-	z-index: 5;
+	z-index: 7;
 	/*line-height: 40px;*/
 }
 /*Seccion del header----------------------------------------------------------------------------------------*/
@@ -379,9 +379,10 @@ footer p{
 		top:-50vh;
 		bottom: 50vh;
 		height: 50vh;
-		background-color: rgba(0, 0, 0, 1);
+		background-color: rgba(0, 0, 0, .5);
 		width: 100vw;
-		transition: 1s;	
+		transition: .5s;	
+		z-index: 5;
 	}
 	.arriba.active{
 		top: 0;
@@ -391,9 +392,10 @@ footer p{
 		top:150vh;
 		bottom: 200vh;
 		height: 50vh;
-		background-color: rgba(0, 0, 0, 1);
+		background-color: rgba(0, 0, 0, .5);
 		width: 100vw;
-		transition: 1s;
+		transition: .5s;
+		z-index: 5;
 	}
 	.abajo.active{
 		top: 50vh;
@@ -411,6 +413,7 @@ footer p{
 		font-size: 20px;
 		text-decoration: underline;
 		transition: .5s;
+		z-index: 6;
 	}
 	.menu.is-active{
 		left: 0;
