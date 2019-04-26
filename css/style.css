@@ -187,7 +187,69 @@ h1,h2,h3,h4,h5,h6{
 	margin: 1em;
 	line-height: 35px;	
 }
+/*-Seccion Habilidades---------------------------------------------------------------------------------------*/
+.habilities-section{
+	background-color: #c5c5c5;
+	margin: 0;
+	padding: 20px;
+	height: auto;
+}
+.habilities-section h2{
+	text-align: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin:0;
+	padding: .7em .3em;
+	padding-top: 0;
+	font-size: 30px;
+}
+.habilities{
+	padding: 0;
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
 
+}
+.hability{
+	background-color: #afafaf;
+	padding: .3em;
+	margin: .5em;
+	border-radius: 5px;
+	display: flex;
+	justify-content: space-between;
+	width: 40%;
+}
+.hability h4{
+	margin: .5em;
+}
+progress[value]{
+	margin:auto 1em;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	/* Quitamos el borde que aparece en Firefox */
+	border: none;
+	width: 250px;
+	/*min-width:250px;*/
+	height: 20px;
+	/*Para mozilla*/
+	background-color: #d1d1d1;
+	border-radius: 5px;
+	overflow: hidden;
+
+}
+progress::-moz-progress-bar{
+	background-color: #026fff;
+}
+progress::-webkit-progress-value{
+	background-color: #026fff;
+
+}
+progress::-webkit-progress-bar{
+	background-color: #d1d1d1;
+
+}
 /*Seccion Servicios-----------------------------------------------------------------------------------------*/
 .services{	
 
@@ -363,6 +425,12 @@ footer p{
 	.hero{
 		height: 50vh;
 	}
+	.hability{
+		width: 40%;
+	}
+	progress[value]{
+		max-width: 200px;
+	}
 }
 @media screen and (max-width: 767px){
 	.burger-button{
@@ -446,9 +514,38 @@ footer p{
 	.link#special{
 		padding: 10px;
 	}
+	.hero{
+		font-size: 30px;
+		height: 40vh;
+	}
+	.hero h1{
+		font-size: .9em;
+		line-height: 1.5em;		
+	}
+	.aboutme-detail h2{
+		font-size: 22px;
+	}
+	.aboutme-detail p{
+		font-size: 18px;
+		line-height: 1.5em;	
+	}
+	.habilities-section h2{
+		font-size: 22px;
+	}
+	.habilities{
+		margin:auto;
+		max-width: 350px;
+		display: block;
+	}
+	
+	.hability {
+		width: 100%;
+		margin: 5px auto ;
+	}
 	.services-h2{
 		padding: 10px 20px;
 		height: auto;
+		font-size: 22px
 
 
 	}
@@ -474,7 +571,7 @@ footer p{
 
 	}
 	.projects h2{
-		font-size: 30px;
+		font-size: 22px;
 		margin-bottom: 1em;
 	}
 	.project{
@@ -512,15 +609,26 @@ footer p{
 		margin: .7em;
 		text-align: justify;
 	}
+	.contact h2{
+		font-size: 22px;
+	}
 }
 @media screen and (max-width: 480px){
 	body{
 		/*background-position: 0 40px ;*/
 		background-size: 150vw auto;
 	}
-	.hero{
+	/*.hero{
 		font-size: 30px;
 		height: 40vh;
+	}
+	.hero h1{
+		font-size: .9em;
+		line-height: 1.5em;		
+	}*/
+	.hero{
+		font-size: 22px;
+		height: 35vh;
 	}
 	.hero h1{
 		font-size: .9em;
@@ -529,19 +637,52 @@ footer p{
 	.aboutme-detail{
 		margin: 0 auto;
 		width: auto;
-		font-size: 16px;
+		font-size: 14px;
 	}
+	.aboutme-detail p{
+		line-height: 1.5em;
+		font-size: 1.2em;
+		margin: 1em;
+	}/*
+	.aboutme-detail{
+		margin: 0 auto;
+		width: auto;
+		font-size: 16px;
+	}*/
 	.aboutme-detail h2{
-		font-size: 1.5em;
+		font-size: 17px;
 		margin: .3em auto;
 	}
-
+	/*
 	.aboutme-detail p{
 		font-size: 1.2em;
 		margin: 1em;
+	}*/
+	.habilities-section h2{
+		font-size: 18px;
+	}	
+	.habilities{
+		margin:auto;
+		max-width: 350px;
+		display: block;
 	}
+	.hability {
+		width: auto;
+		margin: .5em ;
+	}
+	.hability h4{
+		font-size: 1em;
+		width: 58px;
+
+
+	}
+
+	progress[value]{
+		width: 150px;
+	}
+
 	.services-h2{
-		font-size: 1.5em;
+		font-size: 17px;
 		padding: .3em;
 		height: auto;
 	}
@@ -578,7 +719,7 @@ footer p{
 		/*font-size: 30px;*/
 	}
 	.contact h2{
-		font-size: 1.5em;
+		font-size: 17px;
 	}
 	.social{
 		padding: 0 1.5em;
@@ -609,10 +750,23 @@ footer p{
 	.aboutme-detail{
 		margin: 0 auto;
 		width: auto;
-		font-size: 14px;
+		font-size: 12px;
 	}
 	.aboutme-detail p{
 		line-height: 1.5em;
+	}
+	.habilities-section{
+		font-size: 14px;
+	}
+	.habilities-section h2{
+		font-size: 1.5em;
+	}
+	.hability {
+		width: 90%;
+		margin: .5em auto ;
+	}
+	.hability h3{
+		font-size: 1em;
 	}
 
 	.services{
