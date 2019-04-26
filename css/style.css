@@ -85,7 +85,6 @@ h1,h2,h3,h4,h5,h6{
 	display: flex;
 	justify-content: space-between;
 	flex-wrap: wrap;
-
 }
 .logo{
 	width: 212px;
@@ -132,7 +131,6 @@ h1,h2,h3,h4,h5,h6{
 	justify-content: center;
 	font-weight: bold;
 	margin-top: 18px;
-
 }
 /*Seccion del Hero------------------------------------------------------------------------------------------*/
 .hero{
@@ -171,7 +169,7 @@ h1,h2,h3,h4,h5,h6{
 	max-width: 660px;
 	margin: auto;
 	border-radius: 5px;
-	box-shadow: 0 0 15px black;
+	box-shadow: 0 0 2px black;
 	display: flex;
 	align-items: center;	
 	justify-content: space-around;
@@ -199,7 +197,7 @@ h1,h2,h3,h4,h5,h6{
 	font-size: 1em;
 }
 .aboutme-detail p{
-	font-size: .7em;
+	font-size: .55em;
 	margin: 1em;
 	line-height: 35px;	
 }
@@ -230,11 +228,12 @@ h1,h2,h3,h4,h5,h6{
 .hability{
 	background-color: #afafaf;
 	padding: .3em;
-	margin: .5em;
+	margin: .8em;
 	border-radius: 5px;
 	display: flex;
 	justify-content: space-between;
 	width: 40%;
+	box-shadow: 0 0 2px black;
 }
 .hability h4{
 	margin: .5em;
@@ -266,6 +265,79 @@ progress::-webkit-progress-bar{
 	background-color: #d1d1d1;
 
 }
+/*-Seccion Certificados------------------------------------------------------------------------------------*/
+.certificates-section{
+	background-color: #dadada;	
+	padding: 20px;
+}
+.certificates-section h2{
+	font-size: 30px;
+	margin: 0 auto;
+	text-align: center;
+}
+.certificates{
+	background-color: #dadada;
+	margin: 0;
+	display: flex;
+	flex-shrink: 0;
+	flex-wrap: wrap;
+}
+.certificate{
+	width: 30%;
+	margin: 20px auto ;
+	height: auto;
+	border-radius: 5px;
+	overflow: hidden;
+	position: relative;
+	box-shadow: 0 0 2px black;
+}
+.certificate-image-container{
+	margin:0;	
+	object-fit: cover;
+	width: 100%;
+	height: 100%
+}
+.certificate-image{
+	/*position: relative;*/
+	width: 100%;
+	height: 100%;
+	/*top: 0;
+	bottom: 0;
+	object-fit: cover;*/
+}
+.certificate-detail{
+	display: flex;
+	justify-content: center;
+	align-items: center; 
+	background-color: rgba(0,0,0,.4);
+	/*width: 20px;*/
+	/*height: 40px;*/
+	position: absolute;
+	z-index: 1;
+	margin: 0;
+	bottom: 0px;
+	top: 0px;
+	left: 0;
+	right: 0;
+/*	padding: 5px;*/
+
+}
+.certificate-link{
+	text-decoration: none;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 0;
+	height: 100%;
+	width: 100%;
+	color: white;
+	font-weight: bold;
+	/*background-color: rgba(, 200, 200, .2);*/
+	font-size: 30px;
+	padding: 20px;
+
+}
+
 /*Seccion Servicios-----------------------------------------------------------------------------------------*/
 .services{	
 
@@ -503,9 +575,10 @@ footer p{
 		display: flex;
 		justify-content: center;
 		font-size: 20px;
-		text-decoration: underline;
+		/*text-decoration: underline;*/
 		transition: .5s;
 		z-index: 6;
+		font-weight: bold;
 	}
 	.menu.is-active{
 		left: 0;
@@ -530,8 +603,12 @@ footer p{
 		justify-content: center;
 		
 	}
+
 	.link#special{
 		padding: 10px;
+		border: 2px solid white;
+		color: white;
+		text-decoration-line: none;
 	}
 	.hero{
 		font-size: 30px;
@@ -545,13 +622,14 @@ footer p{
 		display: block;
 		max-width: 500px;
 		margin: auto;
-		padding: 20px 0;
+		padding: 20px 0 5px;
 	}
 	.aboutme-image-container{
 		margin: 20px auto;
 	}
 	.aboutme-detail{
-		margin: auto;
+		margin: 20px;
+		max-width: 100%;
 	}
 	.aboutme-detail h2{
 		font-size: 22px;
@@ -571,7 +649,20 @@ footer p{
 	
 	.hability {
 		width: 100%;
-		margin: 5px auto ;
+		margin: 10px auto ;
+		padding: 0;
+	}
+	progress[value]{
+		height: 16px;
+	}
+	.certificates-section h2{
+		font-size: 22px;
+	}
+	.certificate{
+		width: 40%;
+	}
+	.certificate-link{
+		font-size: 20px;
 	}
 	.services-h2{
 		padding: 10px 20px;
@@ -690,6 +781,12 @@ footer p{
 	progress[value]{
 		width: 150px;
 	}
+	.certificates-section h2{
+		font-size: 18px;
+	}
+	.certificate-link{
+		font-size: 18px;
+	}
 	.services-h2{
 		font-size: 17px;
 		padding: .3em;
@@ -721,7 +818,7 @@ footer p{
 	}
 	.project-article{
 		font-size: 24px;
-	}
+	}	
 	.contact{
 		/*font-size: 30px;*/
 	}
