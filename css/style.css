@@ -43,9 +43,6 @@ body{
 	background-attachment: fixed;
 
 }
-p{
-	text-align: justify;
-}
 ul{
 	display: flex;
 	height: inherit;
@@ -199,7 +196,7 @@ h1,h2,h3,h4,h5,h6{
 .aboutme-detail p{
 	font-size: .55em;
 	margin: 1em;
-	line-height: 35px;	
+	line-height: 22px;	
 }
 /*-Seccion Habilidades---------------------------------------------------------------------------------------*/
 .habilities-section{
