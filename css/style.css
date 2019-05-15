@@ -288,6 +288,9 @@ progress::-webkit-progress-bar{
 	position: relative;
 	box-shadow: 0 0 2px black;
 }
+.certificate:hover .certificate-detail{
+	display: flex;
+}
 .certificate-image-container{
 	margin:0;	
 	object-fit: cover;
@@ -303,7 +306,7 @@ progress::-webkit-progress-bar{
 	object-fit: cover;*/
 }
 .certificate-detail{
-	display: flex;
+	display: none;
 	justify-content: center;
 	align-items: center; 
 	background-color: rgba(0,0,0,.4);
@@ -319,6 +322,7 @@ progress::-webkit-progress-bar{
 /*	padding: 5px;*/
 
 }
+
 .certificate-link{
 	text-decoration: none;
 	display: flex;
