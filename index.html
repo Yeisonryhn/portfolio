@@ -12,25 +12,23 @@
 
 <body>
 	<i class="icon-menu burger-button" id="burger-button"></i>
+	<div class="arriba" id='up'></div>
+	<div class="abajo" id="down"></div>
 	<header id="header" class="header"><!--------------------------------Header------------------------------->
 		<div class="wrapper">
 				<figure class="logo">
 					<img src="img/logo.svg" alt="logo yeison fuentes" width="90%">
 					<strong><p>Yeison Fuentes</p></strong>
 				</figure>
-				<div class="arriba" id='up'>	
-				</div>
-				<nav class="menu">
+					<nav class="menu">
 					<ul>
 						<li><a class="link" href="#sobre-mi">Acerca de Mí</a></li>
 						<li><a class="link" href="#habilidades">Habilidades</a></li>
+						<li><a class="link" href="#proyectos">Proyectos</a></li>
 						<li><a class="link" href="#certificados">Certificados</a></li>
 						<li><a id="special" class="link" href="#contactame">Contáctame</a></li>
 					</ul>
 				</nav>
-				<div class="abajo" id="down">
-					
-				</div>
 		</div>	
 	</header><!----------------------------------------------------Fin del header----------------------------->
 <section class="hero">
@@ -48,6 +46,10 @@
 					<h2>Acerca de Mí</h2>	
 					<p>Soy desarrollador web freelance y estudiante de sexto semestre de Ingeniería Informática en la Universidad Nacional Experimental del Táchira. Puedo crear páginas y aplicaciones web amigables para usted, ya que tengo conocimientos tanto de frontend/backend, como también otras tecnologías de desarrollo para aplicaciones de escritorio, conocimientos adquiridos en mi carrera universitaria y producto del autoestudio en casa.
 					</p>
+					<h3>Formación Académica Universitaria</h3>
+					<p><strong>Fecha esperada de egreso:</strong> Agosto de 2021</p>
+					<p><strong>Unidades de Crédito (UC) aprobadas:</strong> 89UC</p>
+					<p><strong>Índice Académico:</strong> 6.03</p>
 				</article>		
 				<figure class="aboutme-image-container">
 					<img class="aboutme-image" src="img/foto.jpg">
@@ -89,6 +91,41 @@
 			</ul>
 		</div>
 	</section>
+	<section class="projects-section" id="proyectos">
+		<div class="wrapper">
+			<h2>Proyectos</h2>
+			<div class=projects>
+				<article class="project">
+					<figure class="project-image-container">
+						<img class="project-image" src="img/peritex.png" alt="Proyecto1Yeison">
+						<!--<div class="detail"><a>Detalle</a></div>-->
+					</figure>				
+					<div class=project-article>
+						<h3 class="project-title">Peritex</h3>
+						<p class="project-detail">Se trata de una aplicacion web desarrollada en PHP con Laravel, la cual gestiona la informacion de el sistema de peritaje <strong>Peritex</strong>.
+						En el mismo se pueden registrar usuarios y administradores, para hacer distintas operaciones con los datos dependiendo de su rol. <br>Proyecto creado con fines educativos para la Universidad Nacional Experimental del Táchira</p>					
+					</div>
+
+				</article>	
+				
+				<article class="project">
+					<figure class="project-image-container">
+						<img class="project-image" src="img/Tech.jpg" alt="Proyecto2Yeison">
+						<!--<div class="detail"><a>Detalle</a></div>-->
+					</figure>
+						<div class=project-article>
+
+						<h3 class="project-title">Proyecto 2</h3>
+						<p class="project-detail">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ultricies aliquam augue non tristique. Duis rutrum accumsan velit. Fusce quam orci, pretium vel viverra at, fringilla quis 	justo.</p>
+					</div>
+					
+				</article>	
+
+				
+				
+			</div>
+		</div>		
+	</section> 
 	<section class="certificates-section" id="certificados">
 		<div class="wrapper">
 			<h2>Certificados</h2>
@@ -133,6 +170,21 @@
 			</div>
 		</div>
 	</section>
+	<section class="references-section" >
+		<div class="wrapper">
+			<h2 class="references-h2">Referencias Personales</h2>
+			<div class="references">
+				<article class=reference>
+					<h3>Gregory Sanchez García</h3>
+					<p>Estudiante de 8vo Semestre Ingeniería Informática UNET<br><strong>Teléfono: </strong> 0424-7232869 <br><strong>Email: </strong>gregory.Sanchezg@unet.edu.ve</p>
+				</article>
+				<article class=reference>
+					<h3>Anny E. Chacón Sánchez</h3>
+					<p>Estudiante de 8vo Semestre Ingeniería Informática UNET<br><strong>Teléfono: </strong> +58 424-7305170 <br><strong>Email: </strong>anny.chacon@unet.edu.ve</p>
+				</article>				
+			</div>
+		</div>		
+	</section>
 	<!-- <section class="services" >
 		<div class="wrapper">
 			
@@ -149,36 +201,9 @@
 				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ultricies aliquam augue non tristique. Duis rutrum accumsan velit. Fusce quam orci, pretium vel viverra at, fringilla quis justo.</p>
 			</article>
 		</div>		
-	</section>
+	</section>-->
 
  
-	<section class="projects" id="proyectos">
-		<div class="wrapper">
-			<h2>Proyectos</h2>
-			<article class="project">
-				<figure class="project-image-container">
-					<img class="project-image" src="img/Tech.jpg" alt="Proyecto1Yeison">
-				</figure>				
-				<div class=project-article>
-					<h3 class="project-title">Proyecto 1</h3>
-					<p class="project-detail">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ultricies aliquam augue non tristique. Duis rutrum accumsan velit. Fusce quam orci, pretium vel viverra at, fringilla quis justo.</p>					
-				</div>
-
-			</article>	
-
-			<article class="project">
-				<figure class="project-image-container">
-					<img class="project-image" src="img/Tech.jpg" alt="Proyecto2Yeison">
-				</figure>
-					<div class=project-article>
-
-					<h3 class="project-title">Proyecto 2</h3>
-					<p class="project-detail">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ultricies aliquam augue non tristique. Duis rutrum accumsan velit. Fusce quam orci, pretium vel viverra at, fringilla quis 	justo.</p>
-				</div>
-				
-			</article>	
-		</div>		
-	</section> -->
  	
  
 	<section class="contact" id="contactame">

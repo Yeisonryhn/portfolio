@@ -115,7 +115,7 @@ h1,h2,h3,h4,h5,h6{
 	height: inherit;
 	display: flex;
 	align-items: center;
-	margin-right: 30px;
+	margin-right: 20px;
 	font-family: 'Lato', sans-serif;
 }
 .link#special{
@@ -128,6 +128,7 @@ h1,h2,h3,h4,h5,h6{
 	justify-content: center;
 	font-weight: bold;
 	margin-top: 18px;
+	padding: 0 5px;
 }
 /*Seccion del Hero------------------------------------------------------------------------------------------*/
 .hero{
@@ -192,6 +193,14 @@ h1,h2,h3,h4,h5,h6{
 	text-align: center;
 	margin: .5em;
 	font-size: 1em;
+}
+.aboutme-detail h3{
+	color: #026fff;
+	text-align: center;
+	margin: .5em;
+	margin-top: 1.5em ;
+	font-size: 0.7em;
+
 }
 .aboutme-detail p{
 	font-size: .55em;
@@ -262,18 +271,117 @@ progress::-webkit-progress-bar{
 	background-color: #d1d1d1;
 
 }
+/*Seccion Proyectos-----------------------------------------------------------------------------------------*/
+.projects-section{
+	margin: auto;
+	background-color: #dadada;
+	padding: 20px;	
+	/*display: grid;
+	grid-template-columns: repeat(2,minmax(200px,1fr));*/
+}
+.projects{
+	display: flex;
+	flex-wrap: wrap;
+	/*align-items: center;*/
+}
+.projects-section h2{
+	
+    text-align: center;
+    font-size: 30px;
+    margin: 10px;	
+    margin: 0;
+    padding: .7em .3em;
+    padding-top: 0;
+
+
+}
+.project{
+	flex-shrink: 0;
+	flex-wrap:  wrap;
+	width: 48%;
+	background-color: #b1b1b1;
+	border-radius: 5px;
+	box-shadow: 0 0 5px black;
+	/*display: block;*/
+	font-size: 30px;
+	margin: 1%;
+	overflow: hidden;
+	position: relative;
+}
+.project-article{
+	/*width: 95%;*/
+	margin: 20px 40px;
+	padding: 20px;
+	margin-top: -60px;
+	position: relative;
+	z-index: 20;
+	/*bottom: 0;*/
+	/*left: 2.5%;*/
+	background-color: rgba(233, 233,233, .7);
+}
+
+.project-title{
+	margin: 0;
+	text-align: center;
+	font-size: 25px;
+	font-weight: 300;
+	margin-bottom: 20px;
+}
+
+.project-detail{
+	font-size: 20px;
+	line-height: 22px;
+	margin: 5px;
+}
+
+.project-image-container{
+	width: 100%;
+	height: auto;
+    margin: 0 ;
+    transition: .5s;    
+}
+.project-image-container:hover .detail{
+	display: flex;
+
+	/*width: 100vw;
+	position: absolute;
+	left: 0;
+    margin: 0 ;*/
+}
+.detail{
+	width: 100%;
+	height: 100%;
+	display: none;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	top: 0;
+	color: white;
+	background-color: rgba(0, 0, 0, .5)
+}
+
+
+.project-image{
+	width: 100%;
+	height: 300px;
+	object-fit: cover;
+}
 /*-Seccion Certificados------------------------------------------------------------------------------------*/
 .certificates-section{
-	background-color: #dadada;	
+	background-color: #818181;	
 	padding: 20px;
 }
 .certificates-section h2{
 	font-size: 30px;
 	margin: 0 auto;
 	text-align: center;
+	margin: 0;
+    padding: .7em .3em;
+    padding-top: 0;
+
 }
 .certificates{
-	background-color: #dadada;
+	/*background-color: #dadada;*/
 	margin: 0;
 	display: flex;
 	flex-shrink: 0;
@@ -287,6 +395,7 @@ progress::-webkit-progress-bar{
 	overflow: hidden;
 	position: relative;
 	box-shadow: 0 0 2px black;
+
 }
 .certificate:hover .certificate-detail{
 	display: flex;
@@ -312,6 +421,7 @@ progress::-webkit-progress-bar{
 	background-color: rgba(0,0,0,.4);
 	/*width: 20px;*/
 	/*height: 40px;*/
+	transition:  5s;
 	position: absolute;
 	z-index: 1;
 	margin: 0;
@@ -340,7 +450,50 @@ progress::-webkit-progress-bar{
 }
 
 /*Seccion Servicios-----------------------------------------------------------------------------------------*/
-.services{	
+.references-section{	
+	background-color: #c5c5c5;
+	margin:  0;
+	padding: 20px;
+}
+.references-h2{
+	/*height: 50px;*/
+	background-color: #c5c5c5;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin:0;
+	/*padding: .7em .3em;*/
+	font-size: 30px;
+}
+
+.reference{
+	margin: 20px auto;
+	max-width: 500px;
+	background-color: gray;
+	border-radius: 5px;
+	padding: 20px;
+	box-shadow: 0 0 5px black;
+	
+}
+.reference h3{
+	margin-top: 0;
+}
+.reference p{
+	margin-bottom: 0;
+}
+.service-article h3{
+	text-align: center;
+	font-size: 25px;
+	font-weight: 300;
+	margin-bottom: 40px;
+}
+.service-article p{
+	text-align: center;
+	line-height: 30px;
+	font-size: 20px;
+	text-align: justify;
+}
+/*.services{	
 
 	background-color: #c5c5c5;
 	display: flex;
@@ -382,62 +535,8 @@ progress::-webkit-progress-bar{
 	text-align: justify;
 }
 
+*/
 
-
-/*Seccion Proyectos-----------------------------------------------------------------------------------------*/
-.projects{
-	margin: auto;
-	background-color: #818181;
-	padding: 20px;
-	flex-wrap: wrap;
-	align-items: center;
-}
-
-.projects h2{
-
-    text-align: center;
-    font-size: 30px;
-    margin: 10px;
-
-}
-.project{
-	background-color: #c5c5c5;
-	border-radius: 10px;
-	box-shadow: 0 0 20px black;
-	display: flex;
-	padding-left: 20px;
-	padding-bottom:  20px;
-	padding-top: 20px;
-	margin: 40px 150px;
-	align-items: center;
-}
-.project-article{
-	width: 40%;
-	margin: 0 5%;
-}
-
-.project-title{
-	margin: 0;
-	text-align: center;
-	font-size: 25px;
-	font-weight: 300;
-	margin-bottom: 20px;
-}
-
-.project-detail{
-	font-size: 20px;
-	line-height: 30px;
-	text-align: center;
-}
-
-.project-image-container{
-	width: 50%;
-    margin: 0 1%;
-}
-
-.project-image{
-	width: 100%;
-}
 /*Seccion de Contacto---------------------------------------------------------------------------------------*/
 .contact{
 	background-color: #363636;
@@ -516,6 +615,9 @@ footer p{
 	}
 	.aboutme-card{
 		/*width: auto;*/
+	}
+	.project-detail{
+		font-size: 16px;
 	}
 	.hability{
 		width: 40%;
@@ -635,6 +737,9 @@ footer p{
 	.aboutme-detail h2{
 		font-size: 22px;
 	}
+	.aboutme-detail h3{
+	font-size: 18px;
+	}
 	.aboutme-detail p{
 		font-size: 18px;
 		line-height: 1.5em;	
@@ -656,6 +761,25 @@ footer p{
 	progress[value]{
 		height: 16px;
 	}
+	.projects{
+		display: block;		
+	}
+	.project{ 
+		width: 500px;
+		max-width: 500px;
+		margin: 20px auto;
+	}
+	.projects-section h2{
+		font-size:22px;
+		margin-bottom: .6em ;
+	}
+	.project-title{
+		font-size: 20px;
+	}
+	.project-detail{
+		
+		margin: .7em;		
+	} 
 	.certificates-section h2{
 		font-size: 22px;
 	}
@@ -665,16 +789,26 @@ footer p{
 	.certificate-link{
 		font-size: 20px;
 	}
+	.references-h2{
+		font-size:22px;
+		margin-bottom: .6em ;
+	}
+	.references{
+		display: block;
+	}
+	.reference{
+		max-width: 500px;
+		margin:  20px auto;
+	}
+	/*
 	.services-h2{
 		padding: 10px 20px;
 		height: auto;
 		font-size: 22px
-
-
 	}
 	.services{
 		font-size: 25px;
-		padding: 20px 0;/*20px*/
+		padding: 20px 0;
 		justify-content: space-around;
 	}
 	.service-article{
@@ -692,46 +826,7 @@ footer p{
 		margin: .4em 0;
 		font-size: .8em;
 
-	}
-	.projects h2{
-		font-size: 22px;
-		margin-bottom: 1em;
-	}
-	.project{
-		/*flex-shrink: 0;*/
-		display: block;
-		font-size: 30px;
-		width: 400px;
-		margin: auto;
-		margin-bottom: .8em;	
-		padding: 0;
-		overflow: hidden;
-		position: relative;
-	}
-	.project-image-container{
-		margin: 0;
-		width: 100%;
-	}
-
-	.project-image{
-		width:100%;
-		height: 200px;
-		object-fit: cover;
-	}
-	.project-article{
-		width: 100%;
-		margin: 0;
-		font-size: 30px;
-	}
-	.project-title{
-		font-size:.9em;
-		margin-bottom: .6em ;
-	}
-	.project-detail{
-		font-size: .7em;
-		margin: .7em;
-		text-align: justify;
-	}
+	}*/
 	.contact h2{
 		font-size: 22px;
 	}
@@ -762,6 +857,10 @@ footer p{
 	.aboutme-detail h2{
 		font-size: 17px;
 		margin: .3em auto;
+	}
+	.aboutme-detail h3{
+		font-size: 16px;
+		/*margin: .3em auto;*/
 	}
 	.habilities-section h2{
 		font-size: 18px;
@@ -814,14 +913,26 @@ footer p{
 	.project{
 		width: auto;
 	}
-	.projects h2{
-		font-size: 1.5em;
+	.projects-section h2{
+		font-size: 18px;
 	}
 	.project-article{
-		font-size: 24px;
+		margin: -60px 10px 10px;
+		padding: 5px;
+	}
+	.project-title{
+		font-size: 17px;
 	}	
-	.contact{
-		/*font-size: 30px;*/
+	.project-detail{
+		font-size: 16px;
+		line-height: 1.5em;
+		margin: 5px;
+	}
+	.references-h2{
+		font-size: 18px;
+	}
+	.reference h3{
+		font-size: 17px;
 	}
 	.contact h2{
 		font-size: 17px;
