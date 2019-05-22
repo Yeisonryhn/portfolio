@@ -74,7 +74,7 @@ h1,h2,h3,h4,h5,h6{
 /*Seccion del header----------------------------------------------------------------------------------------*/
 .header{
 	height: 79px;
-	background-color: black;
+	background-color: #1b1b1e;
 	border-bottom: 1px solid white;
 	display: flex;
 	justify-content: space-between;
@@ -116,8 +116,9 @@ h1,h2,h3,h4,h5,h6{
 	font-family: 'Lato', sans-serif;
 }
 .link#special{
-	border: 2px solid #026fff;
-	color: #026fff;
+	/*border: 2px solid #026fff;*/
+	border: 2px solid #0496ff;
+	color: #0496ff;
 	border-radius: 10px;
 	width: 100px;
 	height: 40px;
@@ -147,20 +148,20 @@ h1,h2,h3,h4,h5,h6{
 	font-weight: 400;
 }
 .hero strong{
-	color: #026fff;
+	color: #0496ff;
 	font-weight: bold;
 }
 
 /*Seccion acerca de mi--------------------------------------------------------------------------------------*/
 .aboutme{
 	/*height: 500px;*/
-	background-color: #afafaf;
+	background-color: #d8dbe2;
 	padding: 20px;
 	flex-wrap: wrap;
 
 }
 .aboutme-card{
-	background-color: #d1d1d1;
+	background-color: #cacfd6;
 	max-width: 660px;
 	margin: auto;
 	border-radius: 5px;
@@ -186,13 +187,14 @@ h1,h2,h3,h4,h5,h6{
 	max-width: 400px;
 }
 .aboutme-detail h2{
-	color: #026fff;
+	color: #0496ff;
 	text-align: center;
 	margin: .5em;
 	font-size: 1em;
 }
 .aboutme-detail h3{
-	color: #026fff;
+	color: #0496ff;
+	/*color: #026fff;*/
 	text-align: center;
 	margin: .5em;
 	margin-top: 1.5em ;
@@ -206,7 +208,7 @@ h1,h2,h3,h4,h5,h6{
 }
 /*-Seccion Habilidades---------------------------------------------------------------------------------------*/
 .habilities-section{
-	background-color: #c5c5c5;
+	background-color: #d8dbe2;
 	margin: 0;
 	padding: 20px;
 	height: auto;
@@ -229,7 +231,7 @@ h1,h2,h3,h4,h5,h6{
 
 }
 .hability{
-	background-color: #afafaf;
+	background-color: #cacfd6;
 	padding: .3em;
 	margin: .8em;
 	border-radius: 5px;
@@ -252,26 +254,26 @@ progress[value]{
 	/*min-width:250px;*/
 	height: 20px;
 	/*Para mozilla*/
-	background-color: #d1d1d1;
+	background-color: #d8dbe2;
 	border-radius: 5px;
 	overflow: hidden;
 
 }
 progress::-moz-progress-bar{
-	background-color: #026fff;
+	background-color: #0496ff;;
 }
 progress::-webkit-progress-value{
-	background-color: #026fff;
+	background-color: #0496ff;;
 
 }
 progress::-webkit-progress-bar{
-	background-color: #d1d1d1;
+	background-color: #d8dbe3;
 
 }
 /*Seccion Proyectos-----------------------------------------------------------------------------------------*/
 .projects-section{
 	margin: auto;
-	background-color: #dadada;
+	background-color: #d8dbe2;
 	padding: 20px;	
 }
 .projects{
@@ -294,7 +296,7 @@ progress::-webkit-progress-bar{
 	flex-shrink: 0;
 	flex-wrap:  wrap;
 	width: 40%;
-	background-color: #b1b1b1;
+	background-color: #cacfd6;
 	border-radius: 5px;
 	box-shadow: 0 0 5px black;
 	font-size: 30px;
@@ -303,7 +305,7 @@ progress::-webkit-progress-bar{
 	position: relative;
 }
 .project-article{
-	margin: 20px 40px;
+	margin: 20px 20px;
 	padding: 20px;
 	margin-top: -60px;
 	position: relative;
@@ -354,7 +356,7 @@ progress::-webkit-progress-bar{
 }
 /*-Seccion Certificados------------------------------------------------------------------------------------*/
 .certificates-section{
-	background-color: #818181;	
+	background-color: #d8dbe2;	
 	padding: 20px;
 }
 .certificates-section h2{
@@ -437,12 +439,12 @@ progress::-webkit-progress-bar{
 
 /*Seccion Servicios-----------------------------------------------------------------------------------------*/
 .references-section{	
-	background-color: #c5c5c5;
+	background-color:#d8dbe2;
 	margin:  0;
 	padding: 20px;
 }
 .references-h2{
-	background-color: #c5c5c5;
+	background-color: #d8dbe2;
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -453,7 +455,7 @@ progress::-webkit-progress-bar{
 .reference{
 	margin: 20px auto;
 	max-width: 500px;
-	background-color: gray;
+	background-color: #cacfd6;
 	border-radius: 5px;
 	padding: 20px;
 	box-shadow: 0 0 5px black;
@@ -479,12 +481,13 @@ progress::-webkit-progress-bar{
 }
 /*Seccion de Contacto---------------------------------------------------------------------------------------*/
 .contact{
-	background-color: #363636;
+	background-color: #373f51;
 	flex-wrap: wrap;
 }
 .contact h2{
 	margin: 0;
-	color: #026fff;
+	color: #0496ff;
+	/*color: #026fff;*/
 	text-align: center;
 	font-size: 30px;
 	padding: 20px;
@@ -521,7 +524,7 @@ progress::-webkit-progress-bar{
 /*Seccion del footer----------------------------------------------------------------------------------------*/
 footer{
 	height: 50px;
-	background-color: black;
+	background-color: #1b1b1e;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -545,6 +548,7 @@ footer p{
 	justify-content: inherit;
 	align-items: inherit;
 	flex: 1;
+	border-top: 1px solid rgba(0, 0, 0, .1);
 
 }
 
