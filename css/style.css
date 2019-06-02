@@ -115,6 +115,11 @@ h1,h2,h3,h4,h5,h6{
 	align-items: center;
 	margin-right: 20px;
 	font-family: 'Lato', sans-serif;
+	transition: .2s;
+}
+.link:hover{
+	color: #0496ff;
+	transform: scale(1.2);
 }
 .link#special{
 	/*border: 2px solid #026fff;*/
@@ -128,6 +133,10 @@ h1,h2,h3,h4,h5,h6{
 	font-weight: bold;
 	margin-top: 18px;
 	padding: 0 5px;
+}
+.link#special:hover{
+	transform: scale(1.1);
+	box-shadow: 0 0 20px #0496ff;
 }
 /*Seccion del Hero------------------------------------------------------------------------------------------*/
 .hero{
@@ -384,11 +393,16 @@ progress::-webkit-progress-bar{
 	overflow: hidden;
 	position: relative;
 	box-shadow: 0 0 2px black;
+	transition: .2s;
 
 }
 .certificate:hover .certificate-detail{
-	display: flex;
+	display: flex;	
 }
+.certificate:hover{
+	transform: scale(1.1);
+}
+
 .certificate-image-container{
 	margin:0;	
 	object-fit: cover;
@@ -506,9 +520,15 @@ progress::-webkit-progress-bar{
 	height: 60px;
 	background-size: 60px 60px;
 	margin: 0 10px;
+	transition: .5s;
 
 }
-
+.social-link:hover{
+	transform: scale(1.2);
+	/*border: 1px solid red;*/
+	box-shadow: 0 0 20px #0496ff;
+	border-radius: 10px;
+}
 .social-link.twitter{
 	background-image: url('../img/twitter.svg');
 
